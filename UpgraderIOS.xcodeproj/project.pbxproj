@@ -1,0 +1,160 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+    111111111111111111111111 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      path = UpgraderIOSApp.swift;
+      sourceTree = "<group>";
+    };
+    222222222222222222222222 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      path = ContentView.swift;
+      sourceTree = "<group>";
+    };
+    333333333333333333333333 = {
+      isa = PBXFileReference;
+      lastKnownFileType = text.json;
+      path = skins_database.json;
+      sourceTree = "<group>";
+    };
+    444444444444444444444444 = {
+      isa = PBXFileReference;
+      lastKnownFileType = folder.assetcatalog;
+      path = Assets.xcassets;
+      sourceTree = "<group>";
+    };
+    555555555555555555555555 = {
+      isa = PBXGroup;
+      children = (
+        111111111111111111111111,
+        222222222222222222222222,
+        333333333333333333333333,
+        444444444444444444444444,
+      );
+      path = UpgraderIOS;
+      sourceTree = "<group>";
+    };
+    666666666666666666666666 = {
+      isa = PBXFileReference;
+      lastKnownFileType = wrapper.application;
+      path = UpgraderIOS.app;
+      sourceTree = BUILT_PRODUCTS_DIR;
+    };
+    777777777777777777777777 = {
+      isa = PBXGroup;
+      children = (666666666666666666666666);
+      name = Products;
+      sourceTree = "<group>";
+    };
+    888888888888888888888888 = {
+      isa = PBXBuildFile;
+      fileRef = 111111111111111111111111;
+    };
+    999999999999999999999999 = {
+      isa = PBXBuildFile;
+      fileRef = 222222222222222222222222;
+    };
+    AAAAAAAAAAAAAAAAAAAAAAAA = {
+      isa = PBXBuildFile;
+      fileRef = 333333333333333333333333;
+      settings = { ASSET_TAGS = (); };
+    };
+    BBBBBBBBBBBBBBBBBBBBBBBB = {
+      isa = PBXBuildFile;
+      fileRef = 444444444444444444444444;
+    };
+    CCCCCCCCCCCCCCCCCCCCCCCC = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = DDDDDDDDDDDDDDDDDDDDDDDD;
+      buildPhases = (EEEEEEEEEEEEEEEEEEEEEEEE, FFFFFFFFFFFFFFFFFFFFFFFF);
+      buildRules = ();
+      dependencies = ();
+      name = UpgraderIOS;
+      productName = UpgraderIOS;
+      productReference = 666666666666666666666666;
+      productType = "com.apple.product-type.application";
+    };
+    EEEEEEEEEEEEEEEEEEEEEEEE = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (888888888888888888888888, 999999999999999999999999);
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    FFFFFFFFFFFFFFFFFFFFFFFF = {
+      isa = PBXResourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (AAAAAAAAAAAAAAAAAAAAAAAA, BBBBBBBBBBBBBBBBBBBBBBBB);
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+    DDDDDDDDDDDDDDDDDDDDDDDD = {
+      isa = XCConfigurationList;
+      buildConfigurations = (121212121212121212121212, 131313131313131313131313);
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    121212121212121212121212 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Automatic;
+        INFOPLIST_FILE = UpgraderIOS/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.upgraderios;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+    131313131313131313131313 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Automatic;
+        INFOPLIST_FILE = UpgraderIOS/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.upgraderios;
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Release;
+    };
+    141414141414141414141414 = {
+      isa = PBXProject;
+      attributes = { LastUpgradeCheck = 1600; };
+      buildConfigurationList = 151515151515151515151515;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (en, Base);
+      mainGroup = 555555555555555555555555;
+      productRefGroup = 777777777777777777777777;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (CCCCCCCCCCCCCCCCCCCCCCCC);
+    };
+    151515151515151515151515 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (161616161616161616161616, 171717171717171717171717);
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    161616161616161616161616 = {
+      isa = XCBuildConfiguration;
+      buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; };
+      name = Debug;
+    };
+    171717171717171717171717 = {
+      isa = XCBuildConfiguration;
+      buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; };
+      name = Release;
+    };
+  };
+  rootObject = 141414141414141414141414;
+}
