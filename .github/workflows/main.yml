@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main 
+      - main
+
 jobs:
   build:
     runs-on: macos-15
@@ -15,6 +16,9 @@ jobs:
 
       - name: Проверить Xcode
         run: xcodebuild -version
+
+      - name: Исправить путь к базе скинов
+        run: cp UpgraderIOS/Data/skins_database.json UpgraderIOS/skins_database.json
 
       - name: Собрать приложение
         run: |
